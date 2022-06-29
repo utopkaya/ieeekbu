@@ -1,0 +1,36 @@
+<div class="module">
+    <div class="module-head">
+        <h3>Sitede Kayıtlı Etkinlikler</h3>
+    </div>
+    <div class="module-body table">
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">Görsel</th>
+                <th scope="col">Başlık</th>
+                <th scope="col">Tarih</th>
+                <th scope="col">İçerik</th>
+                <th scope="col">Güncelle</th>
+                <th scope="col">Sil</th>
+            </tr>
+            </thead>
+            <tbody>
+            {{#each activities}}
+            <tr>
+                <td><img src="{{activity_img}}" class="img-thumbnail member-list-image" alt=""></td>
+                <td>{{title}}</td>
+                <td>{{date}}</td>
+                <td>{{content}}</td>
+                <td><button class="btn btn-success">Güncelle</button></td>
+                <td>
+                    <form method="POST" action="/admin/delete-activity/{{_id}}?_method=DELETE" enctype="application/x-www-form-urlencoded">
+                        <input type="hidden" name="_method" value="DELETE">
+                        <button type="submit" class="btn btn-danger">Sil</button>
+                    </form>
+                </td>
+            </tr>
+            {{/each}}
+            </tbody>
+        </table>
+    </div>
+</div><!--/.module-->

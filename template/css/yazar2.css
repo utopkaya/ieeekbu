@@ -1,0 +1,157 @@
+/* author header css start */
+
+.author-section {
+    width: 100%;
+    position: relative;
+    height: 450px;
+}
+
+.author-title {
+    font-size: 4.4em;
+    font-weight: 900;
+}
+
+.author-chapter-title {
+    font-size: 2.3em;
+    font-weight: 300;
+}
+
+.author-position {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 45px;
+}
+
+/* author header css end */
+
+/* author detail css start */
+
+#author-detail-section .author-social-medias li {
+    margin-right: 50px;
+}
+
+#author-detail-section .author-social-medias li:last-child {
+    margin-right: 0;
+}
+
+.author-jumbotron, .not-articles-jumbotron {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border-radius: 20px;
+    box-shadow: 0 12px 20px rgba( 0, 0, 0, .2);
+}
+
+.author-jumbotron-header {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -110px;
+}
+
+.author-jumbotron-body {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.author-detail-content {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4em;
+    font-weight: 400;
+}
+
+/* author detail css end */
+
+/* author articles css start */
+
+.not-articles-header {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -50px;
+}
+
+.not-articles-body {
+    margin-top: 7rem;
+    margin-bottom: 5rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
+}
+
+.not-articles-content {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: rgba(12, 12, 12, 0.53);
+}
+
+/* author articles css end */
+
+
+@media screen and (max-width: 1200px) {
+    body {
+        font-size: 13px;
+    }
+
+    footer .social-media li .circle {
+        padding: 1.7rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .author-section {
+        height: 430px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .author-jumbotron-body {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .not-articles-body {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .author-section {
+        height: auto;  
+    }
+
+    .author-position {
+        position: relative;
+        left: 0;
+        transform: translateY(0);
+        top: 0;
+    }
+
+    .author-jumbotron-body {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .not-articles-body {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .author-title {
+        font-size: 3.6em;
+    }
+    
+    .author-chapter-title {
+        font-size: 1.8em;
+    }
+}

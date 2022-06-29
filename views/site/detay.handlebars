@@ -1,0 +1,95 @@
+<!-- AUTHOR HEADER SECTION -->
+<section id="author-header-section" class="py-5 author-section m230-changed image-section">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-12">
+                <h2 class="author-title pt-3 c-white">{{team.name}}</h2>
+                <h5 class="author-chapter-title c-white">{{team.branch}}</h5>
+            </div>
+            <div class="col-12">
+                <img src="{{team.profile_img}}" class="img-fluid author-position rounded-circle">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- AUTHOR DETAIL SECTION -->
+<section id="author-detail-section" class="py-5">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-12 mb-6">
+                <ul class="author-social-medias" data-aos="zoom-in">
+
+                    {{#if team.facebook_link}}
+                        <li><a href="{{team.facebook_link}}" class="author-social-media"><i class="fab fa-facebook-f font-2-5em"></i></a></li>
+                    {{/if}}
+                    {{#if team.linkedin_link}}
+                        <li><a href="{{team.instagram_link}}" class="author-social-media"><i class="fab fa-linkedin-in font-2-5em"></i></a></li>
+                    {{/if}}
+                    {{#if team.twitter_link}}
+                        <li><a href="{{team.twitter_link}}" class="author-social-media"><i class="fab fa-twitter font-2-5em"></i></a></li>
+                    {{/if}}
+                    {{#if team.instagram_link}}
+                        <li><a href="{{team.instagram_link}}" class="author-social-media"><i class="fab fa-instagram font-2-5em"></i></a></li>
+                    {{/if}}
+                </ul>
+            </div>
+            <div class="col-12 mt-6">
+                <div class="author-jumbotron" data-aos="zoom-in">
+                    <div class="author-jumbotron-header">
+                        <img src="/site/img/DurbunluAdam.png" class="img-fluid">
+                    </div>
+                    <div class="author-jumbotron-body">
+                        <p class="author-detail-content">
+                            {{team.content}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- AUTHOR ARTICLES SECTION -->
+<section id="articles-section" class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 mb-4">
+                <h2 class="content-title text-center" data-aos="zoom-in">YAYINA ALDIĞIM MAKALELERİM</h2>
+            </div>
+            {{#if posts.title}}
+                {{#each posts}}
+                <div class="col-md-4">
+                    <a href="yazi-icerik.html" class="card-hover">
+                        <div class="card mb-4" data-aos="zoom-in">
+                            <div class="card-top">
+                                <img src="/site/img/MakaleGorsel.png" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                                <p class="date">22.02.2021</p>
+                                <h3 href="#" class="article-content mb-2"></h3>
+                                <h5 class="editor"><span>Umut Topkaya</span> yazdı</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                {{/each}}
+                {{else}}
+                <div class="col-12 mt-5">
+                    <div class="not-articles-container text-center" data-aos="zoom-in">
+                        <div class="not-articles-jumbotron">
+                            <div class="not-articles-header">
+                                <img src="/site/img/Mutsuz.png" class="img-fluid">
+                            </div>
+                            <div class="not-articles-body">
+                                <p class="not-articles-content">
+                                    Burayı boş gördüğün için üzgünüm dostum :/ Bu sayfa için çalışıyoruz.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {{/if}}
+        </div>
+    </div>
+</section>

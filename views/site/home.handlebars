@@ -1,0 +1,91 @@
+<!-- HEADER SECTION -->
+<header id="header-section" class="mb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 order-2 order-md-1 pt-5">
+                <h1 class="mb-1 header-title c-blue">IEEE<br>
+                    <span class="text-1"></span><br>
+                    <span class="text-2"></span>
+                </h1>
+                <h2 class="mb-2 outline-text-blue c-white"><span class="text-3"></span></h2>
+                <p class="mb-5 header-text">Büyük kulüp olmanın sorumluluğunda bu yolculuğumuzda siz değerli arkadaşlarımızı aramızda görmekten çok mutlu oluruz !</p>
+                <div class="button-box">
+                    <a href="/about" class="btn-radius-design">Bizi Takip Edin</a>
+                </div>
+            </div>
+            <div class="col-md-6 order-1 order-md-2">
+                <img src="/site/img/AnasayfaGorsel1.png" class="animated-up-down img-fluid">
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- CONTENT SECTION -->
+<section class="content-section py-6">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-right mb-3">
+                <h2 class="content-title" data-aos="zoom-in">IEEE Nedir ?</h2>
+            </div>
+            <div class="col-md-6 img-center">
+                <img src="/site/img/AnasayfaGorsel2.jpg" class="img-fluid rounded-circle" data-aos="zoom-in">
+            </div>
+            <div class="col-md-6">
+                <p class="text-right mt-4" data-aos="zoom-in">
+                    IEEE, Institute of Electrical and Electronics Engineers, temellerini 1884 yılında Alexander Graham Bell ve Thomas Edison’un attığı;
+                    teknolojiyi insanlığın yararına geliştirmeyi amaçlayan, bu doğrultuda bir ekosistem ve organizasyon yaratıp aktif çalışmalar yürüten;
+                    mühendis, bilim insanı ve öğrencilerin oluşturduğu dünyanın en geniş profesyonel teknik topluluğudur.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTENT SECTION -->
+<section class="content-section pt-2 pb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 order-2 order-md-1">
+                <p class="mt-4 text-left" data-aos="zoom-in">
+                    IEEE, üyelerinin hayat boyu süren öğrenim sürecinde onlara mesleki açıdan çok önemli yardımlarda bulunur. Ulusal ve uluslararası konferanslar,
+                    seminerler, kariyer geliştirme ve network üzerine mesleki toplantılar düzenler. Gönüllü aktivitelerle liderlik ve diğer kişisel becerileri
+                    geliştirme fırsatı sunar. 300’den fazla sürekli-eğitim ve geliştirme programı üyelerin hizmetindedir. Kariyer yönetimi ekipmanları ve kaynak
+                    materyaller erişime açıktır. Finansal servisler ve portatif yarar programlarına sahiptir.
+                </p>
+            </div>
+            <div class="col-md-6 order-1 order-md-2 img-center">
+                <img src="/site/img/AnasayfaGorsel3.jpg" class="img-fluid rounded-circle f-none" style="float:right;" data-aos="zoom-in">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ARTICLES SECTION -->
+<section id="articles-section" class="pb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 mb-4">
+                <h2 class="content-title" data-aos="zoom-in">Başlıca Bloglarımız</h2>
+            </div>
+            {{#each blogs}}
+            <div class="col-md-4">
+                <a href="/blog/yazi/{{id}}" class="card-hover">
+                    <div class="card mb-4" data-aos="zoom-in">
+                        <div class="card-top">
+                            <img src="{{blog_img}}" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <p class="date">{{generateDate date 'DD MMM YYYY'}}</p>
+                            <h3 href="#" class="article-content mb-2">{{title}}</h3>
+                            <h5 class="editor"><span>{{author}}</span> yazdı</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            {{/each}}
+            <div class="col-12 mt-4 text-center">
+                <a href="/blog" class="btn-radius-design" data-aos="zoom-in">Daha Fazla Görüntüle</a>
+            </div>
+        </div>
+    </div>
+</section>

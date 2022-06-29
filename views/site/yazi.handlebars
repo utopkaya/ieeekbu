@@ -1,0 +1,83 @@
+<!-- ARTICLE HEADER SECTION -->
+<style>
+    #article-header-section::before{
+        content: "";
+        background-image: url('{{blog.blog_img}}');
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.25;
+    }
+</style>
+<!-- ARTICLE HEADER SECTION -->
+<section id="article-header-section" class="py-5 global-section black-section m150-changed">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-12">
+                <h2 class="article-title pt-3 c-white">{{blog.title}}</h2>
+            </div>
+            <div class="col-12">
+                <div class="img-size-container manuel-position">
+                    <img src="{{blog.blog_img}}" class="manuel-img-fluid img-top-circle">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ARTICLE CONTENT SECTION -->
+<section id="article-content-section" class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 mb-4">
+                <div class="blog-container" data-aos="zoom-in">
+                    <p class="article-date">{{generateDate blog.date 'DD MMM YYYY'}}</p>
+                    <p class="article">
+                        {{blog.content}}
+                    </p>
+                    <p class="article">
+                        <a href="{{blog.source}}" target="_blank" style="color: #0e91d2aa; font-size: 0.9rem"><i class="fas fa-paperclip"></i> kaynak</a>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 order-2 order-md-1">
+                <div class="author-container" data-aos="zoom-in">
+                    <div class="author-image">
+                        <a href="yazar.html"><img src="/site/img/Kullanici1.png" class="img-fluid rounded-circle"></a>
+                    </div>
+                    <div class="author-details">
+                        {{!--  BURADA SORUN VAR! ILGILI DEGIL TUM YAZARLAR LISTELENIYOR :D  --}}
+                        {{#each author}}
+                        <a href="/team/detay/{{id}}">
+                            <h5 class="author-title">{{name}}</h5>
+                            <p class="author-content">{{branch}}</p>
+                        </a>
+                        {{/each}}
+                        <ul class="author-social-medias"><br><br>
+                            <li><a href="#" class="author-social-media"><i class="fab fa-linkedin font-1-6em"></i></a></li>
+                            <li><a href="#" class="author-social-media"><i class="fab fa-twitter-square font-1-6em"></i></a></li>
+                            <li><a href="#" class="author-social-media"><i class="fab fa-instagram font-1-6em"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 order-1 order-md-2" data-aos="zoom-in">
+                <div class="blog-detail-container text-center">
+                    <div class="like-container mr-5">
+                        <button class="blog-detail-button"><i class="fas fa-heart font-1-6em"></i>
+                            <p class="detail-content">134</p></button>
+                    </div>
+                    <div class="share-container">
+                        <button class="blog-detail-button" data-sharer="twitter" data-title=" {{blog.author}} tarafından yayına alınan {{blog.title}} yazısını okumak ister misin ? " data-hashtags="ieeekbuyaziyor" data-url='http://ieeekbu.com/blog/{{blog.id}}'>
+                            <i class="fab fa-twitter font-1-6em" style="color: #0e90d2"></i>
+                            <p class="detail-content">Paylaş</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,38 @@
+<!-- TEAM HEADER SECTION -->
+<section id="team-header-section" class="py-5 global-section gray-section m280-changed">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-12">
+                <h2 class="team-title pt-3 c-blue">IEEE KARABÜK ÖĞRENCİ KOLU İLE TANIŞIN !</h2>
+            </div>
+            <div class="col-12">
+                <img src="/site/img/TakimGorsel.png" class="img-fluid manuel-position">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TEAM CONTENT SECTION -->
+<section id="team-content-section" class="pt-5">
+    <div class="container">
+        <div class="row">
+
+            <!-- döngünün kurulacağı kısım -->
+            {{#each teams}}
+            <div class="col-md-6 col-lg-4">
+                <a href="/team/detay/{{id}}">
+                    <div class="team-card" data-aos="zoom-in">
+                        <div class="team-card-head">
+                            <img src="{{profile_img}}" class="rounded-circle img-fluid">
+                        </div>
+                        <div class="team-card-body">
+                            <h3 class="team-card-title">{{name}}</h3>
+                            <p class="team-card-content">{{branch}}</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</section>

@@ -1,0 +1,49 @@
+<!-- ARTICLES SECTION -->
+<div id="articles-section" class="mb-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="articles-title c-blue">Tüm bloglarımız, sizler için!</h2>
+            </div>
+            <div class="col-md-6">
+                <div class="search_box float-right">
+                    <input type="text" placeholder="Makale Ara">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ARTICLES CONTENT SECTION -->
+<div id="articles-content-section" class="pt-3 pb-2">
+    <div class="container">
+        <div class="row">
+            {{#each blogs}}
+            <div class="col-sm-6 col-md-4">
+                <a href="/blog/yazi/{{id}}" class="card-hover">
+                    <div class="card mb-4" data-aos="zoom-in">
+                        <div class="card-top">
+                            <img src="{{blog_img}}" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <p class="date">{{generateDate date 'DD MMM YYYY'}}</p>
+                            <h3 href="#" class="article-content mb-2">{{title}}</h3>
+                            <h5 class="editor"><span>{{author}}</span> yazdı</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            {{/each}}
+            <div class="col-12 text-center">
+                <nav style="display: inline-block;" data-aos="zoom-in">
+                    <ul class="pagination pagination-lg">
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>

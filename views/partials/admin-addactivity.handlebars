@@ -1,0 +1,46 @@
+<div class="content">
+
+    <div class="module">
+        <div class="module-head">
+            <h3>Yeni Etkinlik Ekle!</h3>
+        </div>
+        <div class="module-body">
+            <br />
+            <form class="form-horizontal row-fluid" action="/admin/activity-post" method="POST" enctype="multipart/form-data">
+
+                <div class="control-group">
+                    <label class="control-label">Başlık</label>
+                    <div class="controls">
+                        <input data-title="A tooltip for the input" type="text" placeholder="etkinlik başlığı" data-original-title="" class="span8 tip" name="title">
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label">Etkinlik İkonu</label>
+                    <div class="controls">
+                        <input data-title="A tooltip for the input" type="file" data-original-title="" class="span8 tip" name="activity_img">
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label">Tarih</label>
+                    <div class="controls">
+                        <input data-title="A tooltip for the input" type="text" placeholder="örn : 21.10.2021" data-original-title="" class="span8 tip" name="date">
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label">Hakkında</label>
+                    <div class="controls">
+                        <textarea class="span8" rows="5" name="content"></textarea>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <div class="controls">
+                        <button type="submit" class="btn btn-success">Etkinlik Kaydet</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>

@@ -1,0 +1,86 @@
+/* contact header css start */
+
+.contact-title {
+    font-size: 2.2em;
+    font-weight: 900;
+}
+
+/* contact header css end */
+
+/* contact content css start */
+
+#team-content-section .form-group {
+    margin-bottom: 1.8rem;
+    width: 90%;
+    float: right;
+}
+
+#team-content-section .textarea-group {
+    float: left !important;
+}
+
+.textarea-group textarea {
+    height: 250px;
+}
+
+.form-control {
+    border-radius: 15px;
+    padding: 2rem;
+    background-color: #f2f2f2;
+    border: none;
+}
+
+.font-1em-600w-OpenSans {
+    font-size: 1.1em;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.form-control::placeholder {
+    color: #a4a4a4;
+}
+
+.form-control:focus {
+    background-color: #f2f2f2;
+    border-color: none;
+    box-shadow: none;
+}
+
+.btn-position {
+    float: right;
+    margin-right: 3rem !important;
+}
+
+.w-90  {
+    width: 90% !important;
+}
+
+#team-content-section .alert-primary {
+    padding: 2.4rem 2rem;
+    border-radius: 15px;
+    color: rgba(4, 77, 113, 0.71);
+    background-color: rgba(4, 104, 152, 0.13);
+}
+
+/* contact content css end */
+
+@media screen and (max-width: 992px) {
+    .btn-position {
+        float: none !important;
+        margin-right: 0 !important;
+    }
+
+    #team-content-section .textarea-group {
+        float: none !important;
+    }
+
+    #team-content-section .form-group {
+        float: none !important;
+        margin-left:  auto !important;
+        margin-right: auto !important;
+    }
+    
+    .text-position {
+        text-align: center !important;
+    }
+}

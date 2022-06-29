@@ -1,0 +1,65 @@
+<!-- CONTACT HEADER SECTION -->
+<section id="contact-header-section" class="py-5 global-section gray-section m220-changed">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-12">
+                <h2 class="contact-title pt-3 c-blue">BİZİMLE HEMEN İLETİŞİME GEÇİN</h2>
+            </div>
+            <div class="col-12">
+                <img src="/site/img/arka.png" class="img-fluid manuel-position">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT CONTENT SECTION -->
+<section id="team-content-section" class="py-5">
+    <div class="container">
+        <div class="row">
+            <div style="width:100%; margin: 40px 0px">
+                {{#if sessionFlash.messageSuccess}}
+                    <div class="{{sessionFlash.typeSuccess}}">
+                        {{sessionFlash.messageSuccess}}
+                    </div>
+                {{else}}
+                    <div class="{{sessionFlash.typeDanger}}">
+                        {{sessionFlash.messageDanger}}
+                    </div>
+                {{/if}}
+            </div>
+            <div class="col-lg-6">
+                <div class="text-position" data-aos="zoom-in">
+                    <form id="contact-forms" action="/contact" method="POST">
+                        <div class="form-group">
+                            <input type="text" class="form-control font-1em-600w-OpenSans" placeholder="Ad ve Soyad" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control font-1em-600w-OpenSans" placeholder="Mail Adresiniz" name="mail" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control font-1em-600w-OpenSans" placeholder="Okuduğunuz Bölüm" name="branch" required>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="text-position">
+                    <div class="form-group textarea-group">
+                        <textarea class="form-control font-1em-600w-OpenSans" style="resize: none;" form="contact-forms" placeholder="Şikayet, öneri veya birçok görüşünüz..." name="message" required data-aos="zoom-in"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mb-5">
+                <div class="text-position">
+                    <button type="submit" class="btn-radius-design btn-position" style="border: none;" form="contact-forms" data-aos="zoom-in">Gönder Gelsin!</button>
+                </div>
+            </div>
+            <div class="col-12 mt-3">
+                <div class="alert alert-primary w-90 mx-auto font-1em-600w-OpenSans" role="alert">
+                    Formdaki alanları doldurmanız zorunludur. Aksi takdirde size yardımcı
+                    olamayız, değerli görüşlerinizi tarafımızca göremeyiz, bu da bizi üzer..
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

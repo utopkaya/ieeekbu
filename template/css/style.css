@@ -1,0 +1,586 @@
+* {
+    text-decoration: none !important;
+    list-style-type: none;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #046898; 
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    background-color: #f6fcff;
+}
+
+.global-section {
+    width: 100%;
+    position: relative;
+    height: 400px;
+}
+
+.m150-changed {
+    margin-bottom: 150px;
+}
+
+.m280-changed {
+    margin-bottom: 280px;
+}
+
+.m230-changed {
+    margin-bottom: 230px;
+}
+
+.m220-changed {
+    margin-bottom: 220px;
+}
+
+.black-section {
+    background-color: #000;
+}
+
+.gray-section {
+    background-color: #f5f5f5;
+}
+
+.other-gray-section {
+    background-color: #fdfdfd;
+}
+
+.image-section {
+    background: url('../img/KullaniciHakkindaArkaplan.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+} 
+
+.manuel-position {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 40px;
+}
+
+.font-400w-30px {
+    font-weight: 400;
+    font-size: 1.8em;
+}
+
+.px-10 {
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+.gray-line {
+    border: 4px solid rgba(0, 0, 0, .1);
+    width: 60%;
+}
+
+.py-6 {
+    padding: 2.5em 0 !important;
+}
+
+.mt-6 {
+    margin-top: 4rem !important;
+}
+
+.mb-6 {
+    margin-bottom: 4rem !important;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #064F72;
+    color: white;
+    cursor: pointer;
+    padding: 15px 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .3),0 0 10px rgba(0, 0, 0, .3),0 0 15px rgba(0, 0, 0, .3),0 0 20px rgba(0, 0, 0, .3);
+}
+  
+
+.content-title {
+    font-weight: 900;
+    font-size: 2.9em;
+    color: #046898;
+}
+
+.card-hover .card {
+    border-radius: .8rem !important;
+}
+
+.btn-radius-design {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1.26em;
+    padding: 1.2rem 2.8rem;
+    border-radius: 40px;
+    color: white;
+    background-color: #046898;
+    box-shadow: 0px 9px 1px #04689840;
+}
+
+.btn-radius-design:hover {
+    color: white;
+}
+
+.author-social-medias {
+    padding-left: 0;
+}
+
+.author-social-medias li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.author-social-medias li .author-social-media i {
+    color: #000;
+}
+
+.font-1-6em {
+    font-size: 1.6em;
+}
+
+.font-2-5em {
+    font-size: 2.5em;
+}
+
+
+
+/* navbar css start */
+
+.bg-light {
+    background-color: #f6fcff !important;
+}
+
+.logo-size {
+    width: 370px;
+}
+
+.nav-item .nav-link {
+    color: #046898 !important;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* navbar css end */
+
+/* header css start */
+
+.header-title, #header-section h2{
+    font-weight: 900;
+}
+
+.c-white {
+    color: #f6fcff;
+}
+
+.c-blue {
+    color: #046898;
+}
+
+.c-black {
+    color: black;
+}
+
+.header-title {
+    font-size: 3.12em;
+}
+
+#header-section h2 {
+    font-size: 2.9em;
+}
+
+#header-section h1 .text-1:before {
+    content: 'STUDENT';
+    animation: animate infinite 8s;
+}
+
+#header-section h1 .text-2:before {
+    content: 'BRANCH';
+    animation: animate2 infinite 8s;
+}
+
+#header-section h2 span:before {
+    content: 'Karabuk University';
+    animation: animate3 infinite 8s;
+}
+
+@keyframes animate {
+    50% {
+        content: 'ÖĞRENCİ';
+    }
+}
+
+@keyframes animate2 {
+    50% {
+        content: 'KOLU';
+    }
+}
+
+@keyframes animate3 {
+    50% {
+        content: 'Karabük Üniversitesi';
+    }
+}
+
+.outline-text-blue {
+    text-shadow: -1px -1px 0 #046898, 1px -1px 0 #046898, -1px 1px 0 #046898, 1px 1px 0 #046898;
+}
+
+.outline-text-white {
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
+#header-section p{
+    font-style: italic;
+    font-weight: medium;
+    font-size: 1.43em;
+}
+
+.animated-up-down {
+    animation: floating 2s ease-in-out infinite alternate-reverse both;
+}
+
+@keyframes floating {
+   0% {
+       transform: translateY(10px);
+   }
+   100% {
+       transform: translateY(-10px);
+   }
+}
+
+/* header css end */
+
+/* content css start */
+
+.content-section p {
+    font-weight: 300;
+    font-size: 1.5em;
+}
+
+/* content css end */
+
+/* articles css start */
+
+.card-hover .card{
+    transition: .6s linear !important;
+}
+
+.card-hover .card:hover{
+    box-shadow: 0 0 50px rgb(179, 179, 179);
+}
+
+.date {
+    display: inline-block;
+    font-weight: 400;
+    font-size: .8em;
+    font-family: 'Open Sans', sans-serif;
+    padding: .3rem 1.2rem;
+    background-color: #EDEDED;
+    border-radius: 15px;
+    color: black;
+} 
+
+.article-content {
+    display: block;
+    font-size: 1.3em;
+    font-weight: 900;
+    color: black !important;
+}
+
+.editor {
+    font-weight: 300;
+    font-size: .9rem;
+    color: black;
+}
+
+.editor span {
+    font-weight: 700;
+}
+
+/* articles css end */
+
+/* footer css start */
+
+footer {
+    background-color: #046898;
+}
+
+footer h5 {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: white;
+    margin-bottom: 1em;
+}
+
+footer .quick-menu {
+    padding-left: 0;
+}
+
+footer .quick-menu li {
+    margin-bottom: .4em;
+}
+
+footer .quick-menu li a, footer .col-md-4 a, footer .col-md-4 p{
+    color: white;
+    font-weight: 300;
+}
+
+footer i {
+    color: white;
+    margin-right: 12px;
+}
+
+footer .form-control {
+    padding: 1.5rem;
+    border-radius: 30px;
+    font-size: .8rem;
+}
+
+footer .form-control:focus {
+    border-color: transparent !important;
+    box-shadow: none;
+}
+
+footer .btn {
+    padding: 0.375rem 0.9rem;
+}
+
+footer .btn-outline-secondary {
+    border-color: transparent;
+    background-color: #064F72;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+} 
+
+footer .btn-outline-secondary:hover {
+    background-color: #064F72;
+    border-color: transparent;
+}
+
+footer .btn-outline-secondary:focus {
+    box-shadow: none;
+}
+
+footer .btn-outline-secondary:not(:disabled):not(.disabled):active {
+    background-color: #064F72;
+    border-color: 0;
+    border-color: transparent;
+}
+
+footer .btn-outline-secondary:not(:disabled):not(.disabled):active:focus {
+    box-shadow: none;
+}
+
+footer .social-media {
+    padding-left: 0;
+}
+
+footer .social-media li {
+    display: inline-block;
+    padding-left: 0;
+}
+
+footer .social-media li .circle {
+    padding: 2rem;
+    border-radius: 50%;
+    background-color: #064F72;
+    position: relative;
+}
+
+footer .social-media li a {
+    font-size: 1.4em;
+}
+
+footer .social-media li .circle i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.copyright {
+    background-color: #064F72;
+}
+
+.copyright h6 {
+    margin-bottom: 0;
+    font-weight: bold;
+    color: white;
+    font-size: .7rem !important;
+    letter-spacing: 0.6px;
+}
+
+/* footer css end */
+
+@media screen and (max-width: 1200px) {
+    body {
+        font-size: 13px;
+    }
+
+    footer .social-media li .circle {
+        padding: 1.7rem;
+    }
+
+    .logo-size {
+        width: 310px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    body {
+        font-size: 10px;
+    }
+
+    footer .social-media li .circle {
+        padding: 1.5rem;
+    }
+
+    .nav-item .nav-link {
+        font-size: 14px;
+    }
+
+    .global-section {
+        height: 380px;
+    }
+
+    .logo-size {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 13px;
+    }
+
+    footer .social-media li .circle {
+        padding: 1.8rem;
+    }
+
+    .img-center {
+        text-align: center;
+        float: none !important;
+    }
+
+    .f-none {
+        float: none !important;
+    }
+
+    .animated-up-down {
+        animation: none;
+    }
+
+    #header-section .pt-5 {
+        padding-top: 1em !important;
+    }
+
+    .header-title, .outline-text-blue, .header-text, .button-box, .content-title, .text-right, .text-left {
+        text-align: center !important;
+    }
+
+    .logo-size{
+        width: 280px;
+    }
+
+    .m280-changed {
+        margin-bottom: 240px;
+    }
+
+    .m220-changed {
+        margin-bottom: 110px;
+    }
+
+    .m150-changed {
+        margin-bottom: 100px;
+    }
+
+    .px-10 {
+        padding-left: 3rem !important;
+        padding-right: 3rem !important;
+    }
+    
+}
+
+@media screen and (max-width: 576px) {
+    body {
+        font-size: 12px;
+    }
+
+    footer .social-media li .circle {
+        padding: 1.6rem;
+    }
+
+    .nav-item .nav-link {
+        font-size: 12px;
+    }
+
+    .navbar {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+
+    .logo-size{
+        width: 250px;
+    }
+
+    .global-section {
+        height: auto;  
+    }
+
+    .m280-changed {
+        margin-bottom: 100px;
+    }
+
+    .m230-changed {
+        margin-bottom: 0;
+    }
+
+    .m220-changed {
+        margin-bottom: 0;
+    }
+
+    .m150-changed {
+        margin-bottom: 10px;
+    }
+
+    .manuel-position {
+        position: relative;
+        top: 0;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .logo-size {
+        width: 220px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .logo-size {
+        width: 200px;
+    }
+}

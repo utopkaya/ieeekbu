@@ -1,0 +1,57 @@
+<div class="module">
+    <div class="module-head">
+        <h3>Bize İletilen Mesajlar</h3>
+    </div>
+    <div class="module-body table">
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">Ad</th>
+                <th scope="col">Mail</th>
+                <th scope="col">Bölüm</th>
+                <th scope="col">Mesaj</th>
+                <th scope="col">Göster</th>
+                <th scope="col">Sil</th>
+            </tr>
+            </thead>
+            <tbody>
+            {{#if messages}}
+                {{#each messages}}
+                    <tr>
+                        <td>{{name}}</td>
+                        <td>{{mail}}</td>
+                        <td>{{branch}}</td>
+                        <td>{{message}}</td>
+                        <td><button class="btn btn-success" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Oku</button></td>
+                        <td><button class="btn btn-danger">Sil</button></td>
+                    </tr>
+                {{/each}}
+                {{else}}
+                    <td class="aler alert-info">gönderilmiş mesaj bulunmamaktadır.</td>
+            {{/if}}
+            </tbody>
+        </table>
+    </div>
+</div><!--/.module-->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Mesajın Detayı</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Değerli IEEE Karabük Üniversitesi Ekibi! Harika iş çıkartıyorsunuz, devamke!
+                Değerli IEEE Karabük Üniversitesi Ekibi! Harika iş çıkartıyorsunuz, devamke!
+                Değerli IEEE Karabük Üniversitesi Ekibi! Harika iş çıkartıyorsunuz, devamke!
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Okudum!</button>
+            </div>
+        </div>
+    </div>
+</div>

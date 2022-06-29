@@ -1,0 +1,56 @@
+<!-- EVENTS HEADER SECTION -->
+<section id="events-header-section" class="py-5 global-section other-gray-section m220-changed">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-12">
+                <h2 class="events-title pt-3 c-blue">ETKİNLİK ÇİZELGEMİZ</h2>
+            </div>
+            <div class="col-12">
+                <img src="/site/img/EtkinliklerGorsel.png" class="img-fluid manuel-position">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- EVENTS CONTENT SECTION -->
+<section id="events-content-section" class="py-5">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-12 px-10">
+                <p class="font-400w-30px mb-5" data-aos="zoom-in">
+                    Kulübümüz bünyesinde mühendislik ve iş hayatına yönelik eğitimler, seminerler ve çok daha
+                    fazla içeriği sizler için hazırladığımız çizelgeden takip edebilirsiniz.
+                </p>
+            </div>
+            <div class="col-12">
+                <hr class="gray-line mt-4" data-aos="zoom-in">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- EVENTS TIMELINE SECTION -->
+<div id="events-timeline-section" class="pt-2 pb-5">
+    <div class="container">
+        <ul class="timeline">
+            {{#each activities}}
+            <li class="timeline-inverted" data-aos="zoom-in">
+                <div class="timeline-badge">
+                    <img src="{{activity_img}}" alt="">
+                </div>
+                <div class="timeline-panel" id="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="timeline-title">{{title}}</h4>
+                        <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>{{date}}</small></p>
+                    </div>
+                    <div class="timeline-body">
+                        <p>
+                            {{content}}
+                        </p>
+                    </div>
+                </div>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+</div>

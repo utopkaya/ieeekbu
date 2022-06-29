@@ -1,0 +1,4 @@
+yazar.html sayfası ile yazar2.html sayfası beraber kullanılacak. Yani backend kısmını yazarken bu sayfaların html ve css'i birleştirelecek. If-else durumuna göre kişinin makalesi/makaleleri olup olmadığına dair alt kısım olması için
+unutmayasın diye yazıyorum.
+
+:d

@@ -1,0 +1,139 @@
+<div class="content">
+
+    <div class="module">
+        <div class="module-head">
+            <h3>Siteye üye ekle</h3>
+        </div>
+        <div class="module-body">
+
+            <!--<div class="alert">
+                <button type="button" class="close" data-dismiss="alert">×</button>
+                <strong>Warning!</strong> Something fishy here!
+            </div>
+            <div class="alert alert-error">
+                <button type="button" class="close" data-dismiss="alert">×</button>
+                <strong>Oh snap!</strong> Whats wrong with you?
+            </div>
+            <div class="alert alert-success">
+                <button type="button" class="close" data-dismiss="alert">×</button>
+                <strong>Well done!</strong> Now you are listening me :)
+            </div>-->
+
+            <br />
+
+            <form class="form-horizontal row-fluid" action="/admin/member-post" method="POST" enctype="multipart/form-data">
+                <div class="control-group">
+                    <label class="control-label">Kullanıcı adı</label>
+                    <div class="controls">
+                        <input type="text" id="basicinput" placeholder="kullanıcı adı" class="span8" name="username">
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label">Şifre</label>
+                    <div class="controls">
+                        <input type="text" id="basicinput" placeholder="şifre" class="span8" name="password">
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label">Ad ve Soyad</label>
+                    <div class="controls">
+                        <input data-title="A tooltip for the input" type="text" placeholder="ad ve soyad" data-original-title="" class="span8 tip" name="name">
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label">Mail Adresi</label>
+                    <div class="controls">
+                        <input data-title="A tooltip for the input" type="text" placeholder="mail adresi" data-original-title="" class="span8 tip" name="mail">
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label">Profil Fotoğrafı</label>
+                    <div class="controls">
+                        <input data-title="A tooltip for the input" type="file" data-original-title="" class="span8 tip" name="profile_img">
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label">Bölüm</label>
+                    <div class="controls">
+                        <input data-title="A tooltip for the input" type="text" placeholder="örn : Endüstri Mühendisliği" data-original-title="" class="span8 tip" name="branch">
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label">Facebook </label>
+                    <div class="controls">
+                        <input data-title="A tooltip for the input" type="text" placeholder="facebook linki" data-original-title="" class="span8 tip" name="facebook_link">
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label">Twitter </label>
+                    <div class="controls">
+                        <input data-title="A tooltip for the input" type="text" placeholder="twitter linki" data-original-title="" class="span8 tip" name="twitter_link">
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label">Instagram </label>
+                    <div class="controls">
+                        <input data-title="A tooltip for the input" type="text" placeholder="instagram linki" data-original-title="" class="span8 tip" name="instagram_link">
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label">Linkedin </label>
+                    <div class="controls">
+                        <input data-title="A tooltip for the input" type="text" placeholder="linkedin linki" data-original-title="" class="span8 tip" name="linkedin_link">
+                    </div>
+                </div>
+
+                <!--<div class="control-group">
+                    <label class="control-label" for="basicinput">Dropdown</label>
+                    <div class="controls">
+                        <select tabindex="1" data-placeholder="Select here.." class="span8">
+                            <option value="">Select here..</option>
+                            <option value="Category 1">First Row</option>
+                            <option value="Category 2">Second Row</option>
+                            <option value="Category 3">Third Row</option>
+                            <option value="Category 4">Fourth Row</option>
+                        </select>
+                    </div>
+                </div>-->
+                <!--<div class="control-group">
+                    <label class="control-label">Radiobuttons</label>
+                    <div class="controls">
+                        <label class="radio">
+                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                            Option one
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                            Option two
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+                            Option three
+                        </label>
+                    </div>
+                </div>-->
+
+                <div class="control-group">
+                    <label class="control-label">Hakkında</label>
+                    <div class="controls">
+                        <textarea class="span8" rows="5" name="content"></textarea>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <div class="controls">
+                        <button type="submit" class="btn btn-success">Üye Kaydet</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>

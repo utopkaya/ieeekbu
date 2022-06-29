@@ -1,0 +1,73 @@
+<div class="content">
+
+<div class="module">
+    <div class="module-head">
+        <h3>Yeni Blog Yayınla!</h3>
+    </div>
+    <div class="module-body">
+
+        <!--<div class="alert">
+            <button type="button" class="close" data-dismiss="alert">×</button>
+            <strong>Warning!</strong> Something fishy here!
+        </div>
+        <div class="alert alert-error">
+            <button type="button" class="close" data-dismiss="alert">×</button>
+            <strong>Oh snap!</strong> Whats wrong with you?
+        </div>
+        <div class="alert alert-success">
+            <button type="button" class="close" data-dismiss="alert">×</button>
+            <strong>Well done!</strong> Now you are listening me :)
+        </div>-->
+
+        <br />
+
+        <form class="form-horizontal row-fluid" action="/admin/post" method="POST" enctype="multipart/form-data">
+            <div class="control-group">
+                <label class="control-label">Başlık</label>
+                <div class="controls">
+                    <input type="text" id="basicinput" placeholder="başlık" class="span8" name="title">
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label class="control-label" for="basicinput">Yazar Seç</label>
+                <div class="controls">
+                    <select tabindex="1" data-placeholder="Select here.." class="span8" name="author">
+                        <!-- admin panelinden yazarlar gelecek -->
+                        <option value="">Yazarlar</option>
+                        {{#each authors}}
+                            <option value="{{name}}">{{name}}</option>
+                        {{/each}}
+                    </select>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label class="control-label">Blog Görsel</label>
+                <div class="controls">
+                    <input data-title="A tooltip for the input" type="file" data-original-title="" class="span8 tip" name="blog_img">
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label class="control-label">İçerik</label>
+                <div class="controls">
+                    <textarea class="span8" rows="5" name="content"></textarea>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label class="control-label">En az bir kaynak</label>
+                <div class="controls">
+                    <input type="text" class="span8"  name="source">
+                </div>
+            </div>
+
+            <div class="control-group">
+                <div class="controls">
+                    <button type="submit" class="btn btn-success">Blogu Yayınla</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

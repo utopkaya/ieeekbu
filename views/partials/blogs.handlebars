@@ -1,0 +1,22 @@
+<table>
+    <tr>
+        <td><h1>{{blog.title}}</h1></td>
+    </tr>
+    <tr>
+        <td><h3>{{blog.author}}</h3></td>
+    </tr>
+    <tr>
+        <td><p>{{blog.content}}</p></td>
+    </tr>
+    <tr>
+        <td><i>{{generateDate date 'DD MMM YYYY'}}</i></td>
+    </tr>
+    <tr>
+        {{#if blog.source}}
+            <td><i>Kaynak : <a href="{{blog.source}}">{{blog.source}}</a></i></td>
+        {{else}}
+            <td>Kaynak eklenmemiş</td>
+        {{/if}}
+
+    </tr>
+</table>

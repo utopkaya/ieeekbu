@@ -1,0 +1,30 @@
+<div class="module">
+    <div class="module-head">
+        <h3>Sitede Kayıtlı Aboneler</h3>
+    </div>
+    <div class="module-body table">
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">Mail</th>
+                <th scope="col">Tarih</th>
+                <th scope="col">Sil</th>
+            </tr>
+            </thead>
+            <tbody>
+                {{#each subscribes}}
+                    <tr>
+                        <td>{{mail}}</td>
+                        <td>{{generateDate date 'DD MMM YYYY'}}</td>
+                        <td>
+                            <form method="POST" action="/admin/delete-activity/{{_id}}?_method=DELETE" enctype="application/x-www-form-urlencoded">
+                                <input type="hidden" name="_method" value="DELETE">
+                                <button type="submit" class="btn btn-danger">Sil</button>
+                            </form>
+                        </td>
+                    </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+</div><!--/.module-->
